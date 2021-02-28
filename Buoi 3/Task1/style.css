@@ -1,0 +1,105 @@
+.container{
+    display: flex;
+    color: #f48847;
+    justify-content: space-between;
+    align-items: center;
+}
+.box1{
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.box1 p{
+    font-family: adobe-caslon-pro;
+    font-size: 18.6864px;
+    font: weight 300px;
+    padding: 1.86864px 0px;
+    margin-left: 31px;
+}
+.box2{
+    margin-right: 150px;
+    display: flex;
+}
+.box2 p{
+    display: inline-block;
+    font-family:freight-text-pro;
+    font-size:33.432px;
+    font-weight:500;
+}
+.box3{
+    display: flex;
+    color: #f48847;
+    margin-right: 61px;
+}
+.box3 i{
+    margin-left: 34px;
+}
+body{
+    background-color:rgb(40,45,48);
+
+}
+.container p{
+    font-family: adobe-caslon-pro;
+}
+.content{
+    align-items: center;
+    flex-direction: column;
+    padding: 101px;
+    border-color:#ffffff;
+    color:#ffffff;
+    display:flex;
+    font-size:18.6864px;
+    font-weight:300;
+    gap:normal;
+    justify-content:center;
+    line-height:33.6355px;
+    padding:101.376px 61.44px;
+}
+.content h1{
+    border-color:#f48847;
+    color:#f48847;
+    font-family:freight-text-pro;
+    font-size:70.296px;
+    font-weight:500;
+    gap:normal;
+    line-height:86.6047px;
+    margin:0px 0px 30px;
+}
+.content p{
+    border-color:#ffffff;
+    color:#ffffff;
+    display:inline;
+    font-family:adobe-caslon-pro;
+    font-size:24.216px;
+    font-weight:300;
+    gap:normal;
+    line-height:43.5888px;
+    text-align:center;
+    font-style: italic;
+}
+.centerimage{  
+    height: 754px;
+    align-items:center;
+    background-color:#282d30;
+    border-color:#ffffff;
+    color:#ffffff;
+    display:flex;
+    font-size:18.6864px;
+    font-weight:300;
+    gap:normal;
+    line-height:33.6355px;
+    padding:61.44px;
+}
+.centerimage img{
+    align-items: center;;
+    display: block;
+    object-position: center;
+    width: 1700px;
+    height: 700px;
+    border-color:#ffffff;
+    color:#ffffff;
+    font-size:18.6864px;
+    font-weight:300;
+    gap:normal;
+    line-height:33.6355px;
+}
