@@ -1,6 +1,6 @@
 html,body{
     background-color:white;
-    min-height:100%;
+    /* height:100%; */
 }
 .header{
     height:75%;
@@ -274,12 +274,12 @@ input{
     display: flex;
     justify-content: center;
     position: relative;
-    -webkit-transform: translateY(-50%);
+    /* -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    top: 20%;
+    transform: translateY(-50%); */
+    top: -200px;
     background-color: white;
     height: 60px;
 }
@@ -293,17 +293,18 @@ input{
 }
 .line{
     position: relative;
-    -webkit-transform: translateY(-50%);
+    /* -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    top: 65px;
+    transform: translateY(-50%); */
+    top: -210px;
     width: 59%;
     height: 0.5px;
     background-color: black;
     color: #e7f3ff;
     opacity: 0.2;
+    z-index: +1;
 }
 .navbar_2{
     width: 60%;
@@ -432,7 +433,7 @@ input{
     margin: auto;
     border-radius: 50%;
 }
-.friend:hover ::-ms-tooltip
+
 .newtext{
     display: flex;
     text-align: center;
@@ -450,7 +451,7 @@ input{
 }
 .rest{
     display: flex;
-    width: 100%;
-    height: 100%;
-    background-color:#f0f2f5; 
+    width: 500px;
+    height: 500px;
+    /* background-color:#f0f2f5;  */
 }
