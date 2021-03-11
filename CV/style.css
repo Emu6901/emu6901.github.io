@@ -1,0 +1,34 @@
+.navbar_1{
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.wrap{
+    width: 70%;
+    background-color:rgb(185, 160, 160);
+    display: flex;
+}
+.header_1_1{
+    width: 4.5rem;
+    height: 4.5rem;
+}
+.header_1_1 img{
+    width: 4.5rem;
+    height: 4.5rem;
+    object-fit: cover;
+    
+    margin: auto;
+    border-radius: 50%;
+}
+.header_2{
+
+}
+.header_2_1{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
