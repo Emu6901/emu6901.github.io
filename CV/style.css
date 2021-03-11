@@ -6,11 +6,15 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    
 }
 .wrap{
     width: 70%;
     background-color:rgb(185, 160, 160);
     display: flex;
+}
+.header_1{
+    width: 13.301%;
 }
 .header_1_1{
     width: 4.5rem;
@@ -25,10 +29,29 @@
     border-radius: 50%;
 }
 .header_2{
-
+    width: 73.676%;
+    display:flex;
+    justify-content: flex-end;
 }
 .header_2_1{
+    width: 50%;
     display: flex;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.header_2_1_1{
+    display:block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+.header_3{
+    width: 13%;
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+.header_3 button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
 }
