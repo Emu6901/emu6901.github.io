@@ -553,7 +553,7 @@ input{
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-    top: 7.1rem;
+    top: 7rem;
     right: 110%;
 }
 .friend .nho::after {
