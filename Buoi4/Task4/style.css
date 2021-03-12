@@ -495,6 +495,81 @@ input{
 .friend:hover .quang {
     visibility: visible;
 }
+
+.mon p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    float: left;
+    clear: left;
+    margin-bottom: 0;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.friend .mon {
+    visibility: hidden;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    box-shadow: 5px 5px 20px gray;
+    border-radius: 10px  10px;
+    text-align: center;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 3.5rem;
+    right: 110%;
+}
+.friend .mon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+}
+.friend:hover .mon {
+    visibility: visible;
+}
+
+.nho p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    float: left;
+    clear: left;
+    margin-bottom: 0;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.friend .nho {
+    visibility: hidden;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    box-shadow: 5px 5px 20px gray;
+    border-radius: 10px  10px;
+    text-align: center;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 7rem;
+    right: 110%;
+}
+.friend .nho::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+}
+.friend:hover .nho {
+    visibility: visible;
+}
+
 .rest{
     display: flex;
     width: 100%;
