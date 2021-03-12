@@ -237,13 +237,12 @@ body{
 }
 .name{
     border-color:white;
-    color:white;
+    color:hsla(0,0%,100%,0.5);
     display:inline;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:12px;
     gap:normal;
     text-align:left;
-    font-size: 12px;
 }
 .name:hover{
     border-color:#c662ef;
