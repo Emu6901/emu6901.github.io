@@ -357,7 +357,7 @@ input{
 }
 
 .container_1:focus{
-    background-color: #e7f3ff;
+    /* background-color: #e7f3ff; */
     color: #1876f2;
     outline:none;
     border-bottom: solid #f0f2f5;
@@ -457,6 +457,7 @@ input{
     border-radius: 50%;
 }
 .quang{
+    font-family: Segoe UI;
     display: block;
 }
 .quang p{
@@ -464,6 +465,7 @@ input{
     clear: left;
     margin-bottom: 0;
     margin-top: 5px;
+    margin-left: 5px;
 }
 .friend .quang {
     visibility: hidden;
