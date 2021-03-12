@@ -151,7 +151,10 @@ body{
     height: 26px;
     border-radius: 0;
     padding: 0;
-    cursor: pointer;   
+    cursor: pointer;  
+}
+.btn_:hover i{
+    color:#9b9b9b;
 }
 .leftbtn{
     left: 90%;
