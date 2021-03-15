@@ -1,6 +1,8 @@
 html,body{
     background-color:white;
     height:100%;
+    margin: 0px;
+    padding: 0px;
 }
 .header{
     height:75%;
@@ -100,6 +102,7 @@ input{
     align-items: center;
     width: 111px;
     height: 56px;
+    cursor: pointer;
 }
 .header_2_1 i{
     color: black;
@@ -151,6 +154,7 @@ input{
     align-items: center;
     size: 30px;
     font-size: 1vw;
+    cursor: pointer;
 }
 .container:hover{
     background-color: #cfcfd3;
@@ -195,6 +199,9 @@ input{
     height: 100%;
     width:100%; 
     border-radius: 50%;
+}
+.header_4_2 img:hover{
+    opacity: 0.9;
 }
 .ava div{
     display: flex;
@@ -433,6 +440,7 @@ input{
 .friend{
     width: 50px;
     height: 60px;
+    cursor: pointer;
 }
 .friend img{
     width: 50px;
@@ -575,4 +583,10 @@ input{
     width: 100%;
     height: 100%;
     background-color:#f0f2f5; 
+}
+.camera{
+    cursor: pointer;
+}
+.camera:hover{
+    background-color: rgb(207, 207, 211);
 }
