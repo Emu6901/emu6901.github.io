@@ -335,6 +335,7 @@ p{
 .elementor-column{
   width: 100%;
   display: flex;
+  position: relative;
 }
 .elementor-column-wrap{
   width: 100%;
@@ -602,4 +603,114 @@ p{
   color: var( --color-primary );
   font-family: var( --typography-secondary-font-family );
   font-weight: var( --typography-secondary-font-weight );
+}
+
+.elementor-element.elementor-element-42f1184{
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  padding: 0em 1em 5em 1em;
+}
+
+.elementor-element .elementor-element-1a5b69a{
+  margin-top: 0em;
+  margin-bottom: 0em;
+  padding: 0em 0em 0em 0em;
+}
+.elementor-element.elementor-element-7f2cd2c{
+  width: 6%;
+}
+.elementor-element-7f2cd2c .elementor-element-populated{
+  margin: 0em 0em 0em 0em;
+  padding: 0em 0em 0em 0em;
+}
+.elementor-element-7f2cd2c .elementor-element-populated .elementor-widget-wrap{
+  align-content: flex-start;
+  align-items: flex-start;
+}
+.elementor-widget{
+  position: relative;
+}
+.elementor-element-ef891b4 .elementor-element-populated{
+  margin: 0em 0em 0em 0em;
+  padding: 0em 0em 0em 0em;
+}
+.elementor-element-f3683ab .elementor-heading-title{
+  color: var(--color-secondary);
+}
+.elementor-element-507d0f7.elementor-view-framed .elementor-icon{
+  background-color: var( --color-accent );
+  fill: #C70039;
+  color: #C70039;
+  font-size: 6px;
+  padding: .5em;
+  border: 3px solid #C70039;
+}
+.elementor-element-507d0f7 .elementor-icon i{
+  transform: rotate(0deg);
+}
+.elementor-element-507d0f7 .elementor-icon i, .elementor-icon svg{
+  width: 1em;
+  height: 1em;
+  position: relative;
+  display: block;
+}
+.elementor-element-507d0f7 .elementor-icon i{
+  display: inline-block;
+  padding: 0;
+}
+.elementor-element.elementor-element-af07d26{
+  width: 94%;
+}
+.elementor-element-af07d26 .elementor-column-wrap.elementor-element-populated .elementor-widget-wrap{
+  align-content: flex-start;
+  align-items: flex-start;
+}
+.elementor-element-af07d26 .elementor-column-wrap .elementor-widget-wrap .elementor-widget:not(.elementor-widget__width-auto):not(.elementor-widget__width-initial):not(:last-child):not(.elementor-absolute){
+  margin-bottom: 10px;
+}
+.elementor-element-e8369ad .elementor-heading-title{
+  color: var( --color-secondary );
+  font-family: var( --typography-secondary-font-family );
+  font-weight: var( --typography-secondary-font-weight );
+}
+h5{
+  font-size: 2rem;
+}
+.elementor-element-a9b3590 .elementor-heading-title{
+  color: var( --color-secondary );
+  font-family: var( --typography-text-font-family );
+  font-weight: var( --typography-text-font-weight );
+  font-size: 1.6rem;
+}
+.elementor-element-2534926 .elementor-heading-title{
+  color: var( --e-color-secondary );
+  font-family: var( --e-typography-text-font-family );
+  font-weight: var( --e-typography-text-font-weight );
+}
+.elementor-element-75d4c40 .elementor-icon-list-item, .elementor-4 .elementor-element.elementor-element-75d4c40 .elementor-icon-list-item a{
+  font-family: var(--typography-accent-font-family);
+  font-size: 12px;
+  font-weight: 300;
+}
+.elementor-element-75d4c40 .elementor-icon-list-icon i{
+  color: #C70039;
+  font-size: 14px;
+}
+.elementor-icon-list-items{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.elementor-element-75d4c40 .elementor-icon-list-text{
+  color: #C70039;
+}
+.elementor-element-e89292a{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0em 0em 0em 0em;
+}
+.elementor-element-af07d26 .elementor-element-populated{
+  margin: 0em 0em 0em 0em;
+  padding: 0em 0em 0em 0em;
 }
