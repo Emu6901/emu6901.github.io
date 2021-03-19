@@ -41,8 +41,8 @@ body {
   font-family: var(--typography-primary-font-family);
   font-weight: var(--typography-secondary-font-weight);
   color: #444;
-  line-height: 1.9;
-  background-color: #f3f3f3;
+  /* line-height: 1.9; */
+  background-color: #ffffff;
   font-size: 1.2rem;
 }
 
@@ -264,7 +264,7 @@ p{
   color: var( --color-text );
   font-family: var( --typography-text-font-family );
   font-weight: var( --typography-text-font-weight );
-  font-size: 1.7rem;
+  font-size: 1.9rem;
 }
 .header__img {
   width: 100%;
@@ -419,10 +419,7 @@ p{
   margin-bottom: 0em;
   padding: 0em 0em 0em 0em;
 }
-.elementor-widget-wrap .elementor-element{
-  width: 100%;
-}
-.elementor-col-50{
+.elementor-column.elementor-col-50{
   width: 50%;
 }
 .elementor-column .elementor-column-wrap{
@@ -497,4 +494,112 @@ p{
   font-family: var( --typography-text-font-family );
   font-weight: var( --typography-text-font-weight );
   font-size: 1.7rem;
+}
+.elementor-icon-list-icon i{
+  color: white;
+}
+/* sec 3 */
+.elementor-element-337d8ca{
+  background-color: #F7EDEF;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  padding: 4em 1em 4em 1em;
+}
+.elementor-element-4cf423a .elementor-element-populated{
+  margin: 0em 0em 0em 0em;
+  padding: 0em 0em 0em 0em;
+}
+.elementor-element-40e3f91 .elementor-heading-title{
+  font-family: var( --typography-secondary-font-family );
+  font-weight: var( --typography-secondary-font-weight );
+}
+.elementor-widget-heading .elementor-heading-title{
+  font-family: var( --typography-primary-font-family );
+  font-weight: var( --typography-primary-font-weight );
+}
+.elementor-element-14d9d87 .elementor-heading-title{
+  color: var(--color-secondary);
+}
+.elementor-element-40e3f91 .elementor-heading-title{
+  color: var( --color-primary );
+}
+
+.elementor-element-fd81628{
+  margin-top: 0em;
+  margin-bottom: 0em;
+  padding: 0em 0em 0em 0em;
+}
+.elementor-element-46532a9 .elementor-title{
+  color: var( --color-secondary );
+  font-family: var( --typography-secondary-font-family );
+  font-weight: var( --typography-secondary-font-weight );
+  font-size: 1.7rem;
+}
+.elementor-element-46532a9 .elementor-progress-wrapper{
+  background-color: #C4C4C4;
+  border-radius: 100px;
+  overflow: hidden;
+}
+.elementor-progress-wrapper{
+  position: relative;
+  color: #fff;
+  height: 100%;
+}
+
+.elementor-element-aefafed .elementor-element-populated{
+  margin: 0em 3em 0em 0em;
+  padding: 0em 0em 0em 0em;
+}
+.elementor-element-f3a0d58 .elementor-element-populated{
+  margin: 0em 0em 0em 3em;
+  padding: 0em 0em 0em 0em;
+}
+.elementor-element-46532a9 .elementor-progress-wrapper .elementor-progress-bar{
+  background-color: #C70039;
+  height: 15px;
+  line-height: 15px;
+  color: #FFFFFF;
+  font-family: var( --typography-secondary-font-family );
+  font-weight: var( --typography-secondary-font-weight );
+}
+.elementor-progress-bar{
+  display: flex;
+  background-color: #818a91;
+  width: 0;
+  font-size: 11px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 2px;
+  transition: width 1s ease-in-out;
+}
+.elementor-progress-text{
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-left: 15px;
+}
+.elementor-progress-percentage{
+  padding-right: 15px;
+}
+
+.elementor-element.elementor-element-c94fbfc{
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  padding: 4em 1em 3em 1em;
+}
+.elementor-element-7d65e1f .elementor-element-populated{
+  margin: 0em 0em 0em 0em;
+  padding: 0em 0em 0em 0em;
+}
+.elementor-element-48d34f4 .elementor-heading-title{
+  color: var(--color-secondary);
+}
+.elementor-element-bfe7481 .elementor-heading-title{
+  color: var( --color-primary );
+  font-family: var( --typography-secondary-font-family );
+  font-weight: var( --typography-secondary-font-weight );
 }
