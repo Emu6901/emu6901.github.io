@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(192, 192, 228);
+    perspective: 200px;
+    
+}
+.square{
+    top:50%;
+    left:50%;
+    position: absolute;
+    display: block;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+}
+.square_in{
+    top:50%;
+    left:40%;
+    position: absolute;
+    display: block;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+}
+.square:hover{
+    animation-name: move;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+.square_in:hover{
+    animation-name: mawasu;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+@keyframes move {
+    0% {transform: rotate3d(0,0,0,0deg); background-color: blanchedalmond;}
+    /* 50%{transform: rotate3d(0,0,1,180deg);background-color: white;} */
+    100% {transform: rotate3d(0,1,0,360deg);background-color: white;}
+}
+@keyframes mawasu{
+    0% {transform: rotate3d(0,0,0,0deg); background-color: blanchedalmond;}
+    /* 50%{transform: rotate3d(0,0,1,180deg);background-color: white;} */
+    100% {transform: rotate3d(1,0,0,360deg);background-color: white;}
+}
