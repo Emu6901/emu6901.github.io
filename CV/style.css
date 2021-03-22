@@ -364,6 +364,7 @@ p{
   margin-bottom: 0em;
   padding: 4em;
   background-color: white;
+  width: 100%;
 }
 .animated{
   animation-duration: 1.25s;
@@ -688,7 +689,7 @@ h5{
   font-family: var( --e-typography-text-font-family );
   font-weight: var( --e-typography-text-font-weight );
 }
-.elementor-element-75d4c40 .elementor-icon-list-item, .elementor-4 .elementor-element.elementor-element-75d4c40 .elementor-icon-list-item a{
+.elementor-element-75d4c40 .elementor-icon-list-item, .elementor-element-75d4c40 .elementor-icon-list-item a{
   font-family: var(--typography-accent-font-family);
   font-size: 12px;
   font-weight: 300;
@@ -712,5 +713,120 @@ h5{
 }
 .elementor-element-af07d26 .elementor-element-populated{
   margin: 0em 0em 0em 0em;
+  padding: 0em 0em 0em 0em;
+}
+
+.elementor-element-f34dc0e{
+  margin-top: 0em;
+  margin-bottom: 0em;
+  padding: 4em 1em 4em 1em;
+}
+.elementor-element-a5509e6 .elementor-element-populated{
+  margin: 0em 0em 0em 0em;
+  padding: 0em 0em 0em 0em;
+}
+.elementor-element-a5509e6 .elementor-element-populated .elementor-widget-wrap{
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.elementor-element-c243685{
+  text-align: left;
+}
+.elementor-element-c243685 .elementor-heading-title{
+  color: var( --color-primary );
+  font-family: var( --typography-secondary-font-family ), Sans-serif;
+  font-weight: var( --typography-secondary-font-weight );
+}
+.elementor-element-e56917d{
+  text-align:left;
+}
+.elementor-element-e56917d .elementor-heading-title{
+  color: var( --color-secondary );
+  font-family: var( --typography-primary-font-family ), Sans-serif;
+  font-weight: var( --typography-primary-font-weight );
+}
+.elementor-element-7e08ac6{
+  margin-top: 1em;
+  margin-bottom: 0em;
+  padding: 0em 0em 0em 0em;
+}
+.elementor-element-7e08ac6 .elementor-col-50{
+  width: 50%;
+}
+.elementor-element-16ca9d9 .elementor-element-populated{
+  margin: 0em 2em 0em 0em;
+  padding: 0em 0em 0em 0em;
+}
+.elementor-element-16ca9d9.elementor-column.elementor-element[data-element_type="column"] > .elementor-column-wrap.elementor-element-populated > .elementor-widget-wrap{
+  align-content: center;
+  align-items: center;
+}
+.elementor-element-56e4392 .elementor-image-box-wrapper .elementor-image-box-img{
+  width: 55%;
+  border-radius: 5px;
+}
+.elementor-element-01c93e2 .elementor-image-box-wrapper .elementor-image-box-img{
+  width: 55%;
+  border-radius: 5px;
+}
+.elementor-element-8c7a397 .elementor-image-box-wrapper .elementor-image-box-img{
+  width: 55%;
+  border-radius: 5px;
+}
+.elementor-element-20cd9d5 .elementor-image-box-wrapper .elementor-image-box-img{
+  width: 55%;
+  border-radius: 5px;
+}
+.elementor-widget:not(.elementor-widget-text-editor):not(.elementor-widget-theme-post-content) figure{
+  margin: 0;
+}
+.elementor-widget-image-box .elementor-image-box-img{
+  display: inline-block;
+}
+.elementor-element-56e4392 .elementor-image-box-wrapper img{
+  border-radius: 5px;
+}
+.elementor-element-01c93e2 .elementor-image-box-wrapper img{
+  border-radius: 5px;
+}
+.elementor-element-8c7a397 .elementor-image-box-wrapper img{
+  border-radius: 5px;
+}
+.elementor-element-20cd9d5 .elementor-image-box-wrapper img{
+  border-radius: 5px;
+}
+.elementor-element-56e4392 .elementor-image-box-content .elementor-image-box-title{
+  color: var(--color-secondary);
+}
+.elementor-element-01c93e2 .elementor-image-box-content .elementor-image-box-title{
+  color: var(--color-secondary);
+}
+.elementor-element-8c7a397 .elementor-image-box-content .elementor-image-box-title{
+  color: var(--color-secondary);
+}
+.elementor-element-20cd9d5 .elementor-image-box-content .elementor-image-box-title{
+  color: var(--color-secondary);
+}
+.elementor img{
+  height: auto;
+  max-width: 100%;
+  border: none;
+}
+.elementor-widget-image-box.elementor-vertical-align-middle .elementor-image-box-wrapper{
+  align-items: center;
+}
+.elementor-widget-image-box.elementor-position-left .elementor-image-box-wrapper{
+  text-align: left;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+}
+.elementor-widget-image-box.elementor-position-left .elementor-image-box-wrapper, .elementor-widget-image-box.elementor-position-right .elementor-image-box-wrapper{
+  display: flex;
+}
+.elementor-element-d8452d2 > .elementor-element-populated{
+  margin: 0em 0em 0em 2em;
   padding: 0em 0em 0em 0em;
 }
