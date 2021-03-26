@@ -14,6 +14,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
   </head>
 <body>
+  
     <header class="header">
         <nav class="nav">
           <img
@@ -27,10 +28,10 @@
               <a class="nav__link" href="">Home</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="">Portfolio</a>
+              <a class="nav__link" href="#section--1">Portfolio</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="">Testimonials</a>
+              <a class="nav__link" href="#section--2">Testimonials</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="">Pages<i class="fas fa-caret-down" style="margin-left: 5px;"></i></a>
@@ -44,19 +45,19 @@
         </nav>
         <div class="header__title">
             <div class="header__title_left">
-              <h2>
+              <h2 class="fadeInUp animated">
                 <span class="highlight">Hi, I am</span>
               </h2>
-              <h1>
+              <h1 class="fadeInUp animated">
                   <span class="highlight">
                       John Campbe
                   </span>
               </h1>
-              <h3>Digital Marketing Expert</h3>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus.</p>
-              <button class="btn--text btn__animation">About Me</button>
+              <h3 class="fadeInUp animated">Digital Marketing Expert</h3>
+              <p class="fadeInUp animated">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus.</p>
+              <button class="fadeInUp btn--text btn__animation  animated" id="btn--load">About Me</button>
             </div>
-            <div class="header__title_right">
+            <div class="header__title_right fadeInUp animated">
               <img
                 src="img/hero.png"
                 class="header__img"
@@ -144,7 +145,7 @@
                                   <h4 class="elementor-heading-title elementor-size-default">My Intro</h4>		
                                 </div>
                               </div>
-                          <div class="elementor-element elementor-element-bd885ac elementor-widget elementor-widget-heading animated fadeInUp" data-id="bd885ac" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+                          <div class="elementor-element elementor-element-bd885ac elementor-widget elementor-widget-heading fadeInUp animated" data-id="bd885ac" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
                               <h2 class="elementor-heading-title elementor-size-default">About Me</h2>		
                             </div>
@@ -686,7 +687,7 @@
       </div>
     </section>
 
-    <section class="elementor-section elementor-top-section elementor-element elementor-element-f34dc0e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f34dc0e" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+    <section class="elementor-section elementor-top-section elementor-element elementor-element-f34dc0e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f34dc0e" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}" id="#section--1">
       <div class="elementor-container elementor-column-gap-default">
         <div class="elementor-row">
           <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a5509e6" data-id="a5509e6" data-element_type="column">
@@ -759,7 +760,7 @@
       </div>
     </section>
 
-    <section class="elementor-section elementor-top-section elementor-element elementor-element-06556ca elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="06556ca" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+    <section class="elementor-section elementor-top-section elementor-element elementor-element-06556ca elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="06556ca" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}" id="#section--2">
       <div class="elementor-container elementor-column-gap-default">
         <div class="elementor-row">
           <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-215af6c" data-id="215af6c" data-element_type="column">
@@ -1006,5 +1007,6 @@
             </section>
     </div>
   </div>
+  <script src="app.js"></script>
 </body>
 </html>
