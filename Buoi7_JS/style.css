@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.elementor-1{
+    width: 50%;
+    height: auto;
+    border: 1px solid;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.elementor-wrap{
+    width: 60%;
+    display:flex;
+    flex-direction:column;
+    
+}
+.elementor-row{
+    display:flex;
+    justify-content:space-between;
+}
+.elementor-2{
+    width: 50%;
+    display:flex;
+    flex-direction:column;
+    border: 1px solid;
+}
