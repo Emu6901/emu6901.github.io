@@ -1,21 +1,26 @@
 nameValue = document.querySelector('#name');
 ageValue = document.querySelector('#age');
 btnAdd = document.querySelector('#btn');
-table = document.querySelector('#table')
+table = document.querySelector('#table');
+modal = document.querySelector('#myModal');
+closeBtn = document.querySelector('#close');
 console.log(nameValue, ageValue, btnAdd, table);
 let student = [];
 let student_ = [];
 let reg = /\d/;
 function myFunc() {
-    if (nameValue.value && ageValue.value && ageValue.value > 0 && !reg.test(nameValue.value)) {
+    if (nameValue.value && ageValue.value && ageValue.value > 0 && ageValue.value<=150 && !reg.test(nameValue.value)) {
         student.push([' '+nameValue.value ,  ageValue.value])
         console.log(student);
         table.innerHTML +='<li>' + nameValue.value + ',' + ageValue.value + '</li>' + '<br>';
     }
     else {
-        alert('Invalid Property');
+        modal.style.display = 'block';
     }
 }
+closeBtn && closeBtn.addEventListener('click', ()=>{
+    modal.style.display = 'none';
+})
 window.onbeforeunload = function () {
     localStorage.clear();
     localStorage.setItem(student_, student);
