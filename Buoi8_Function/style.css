@@ -1,88 +1,165 @@
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616_960_720.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    margin-left: 30px;
-  }
-  .elementor-1 {
-    width: 90%;
-    height: auto;
-    border: 1px solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    margin-bottom: 20px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
-  .elementor-wrap {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-  }
-  .elementor-button button {
-    background-color: rgb(104, 206, 104);
-    border-radius: 20px;
-    padding: 10px 20px;
-    outline: none;
-  }
-  .elementor-row {
-    display: flex;
-    justify-content: space-between;
-  }
-  .elementor-2 {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
-  .title {
-    margin-bottom: 40px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 700;
-  }
-  .line {
-    width: 90%;
-    height: 5px;
-    background-color: rgb(104, 206, 104);
-  }
-  .modal {
-    display: none;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+.elementor-1 {
+  border-radius: 5px;
+  margin: auto;
+  width: 50%;
+  height: auto;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.elementor-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.elementor-button button {
+  background-color: rgb(104, 206, 104);
+  border-radius: 20px;
+  padding: 10px 20px;
+  outline: none;
+}
+.elementor-row {
+  display: flex;
+  justify-content: flex-start;
+}
+.elementor-2 {
+  border-radius: 5px;
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
+.line {
+  margin: auto;
+  width: 49.8%;
+  height: 5px;
+  background-color: rgb(104, 206, 104);
+  border-radius: 5px;
+}
+.modal {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.textInList {
+  font-size: 20px;
+  font-family: "Libre Baskerville", serif;
+  line-height: 45px;
+  text-align: center;
+  text-shadow: 0 1px 1px #fff;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 0px;
+  font-weight: bold;
+}
+/*animation*/
+.elementor-row {
+  position: relative;
+  margin: 20px 0;
+  width: 300px;
+}
+.elementor-row input {
+  border: 0;
+  border-bottom: 2px solid #333;
+  padding: 10px;
+  display: block;
+  font-size: 18px;
+  font-family: "Muli", sans-serif;
+  width: 100%;
+  transition: 0.1s ease-in;
+  border-radius: 5px;
+  color: black;
+}
+.elementor-row label {
+  position: absolute;
+  top: 15px;
+}
+.elementor-row input:focus,
+.elementor-row input:valid {
+  border-bottom-color: darksalmon;
+  outline: none;
+}
+
+.elementor-row input:focus + label span,
+.elementor-row input:valid + label span {
+  color: darksalmon;
+  transform: translateY(-0px);
+}
+.elementor-row label span {
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  min-width: 3px;
+  position: relative;
+  margin: 0;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  top: -7px;
+}
+.elementor-row label:first-child{
+  margin-left: 5px;
+}
+.movewhenclick {
+  padding-left: 10px;
+  top: -50px !important;
+  color: white !important;
+}
+#insideText{
+  color: black;
+}

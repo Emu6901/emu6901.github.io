@@ -9,21 +9,26 @@ let student = [];
 let reg = /\d/;
 let id = 0;
 async function  myFunc() {
-    if (nameValue.value && !reg.test(nameValue.value)) {
+    let name_ = nameValue.value;
+    nameValue.value = '';
+    if (name_ && !reg.test(name_)) {
+        
         id = (parseInt(id, 10) + 1);
-        student.push([id, nameValue.value])
+        student.push([id, name_])
         try {
             await axios.post("https://606b1c60f8678400172e5a1d.mockapi.io/api/myapi", {
-                'name': nameValue.value,
+                'name': name_,
             });
         }
         catch (error) {
             modal.style.display = 'block';
             insideText.innerText = error.toString();
         }
-        table.innerHTML += '<li>' + id + "    " + nameValue.value + '</li>' + '<br>';
+        table.innerHTML += '<li class="textInList">' + id + "    " + name_ + '</li>' + '<br>';
+        
     }
     else {
+        nameValue.value = '';
         modal.style.display = 'block';
         insideText.innerText = 'Invalid input';
     }
@@ -47,7 +52,7 @@ window.onload = async function () {
         })
         student.forEach((e) => {
             if (e != "") {
-                table.innerHTML += '<li>' + e.id + "    " + e.name + '</li>' + '<br>';
+                table.innerHTML += '<li class="textInList">' + e.id + "    " + e.name + '</li>' + '<br>';
             }
             id = e.id;
         })
@@ -55,5 +60,31 @@ window.onload = async function () {
         modal.style.display = 'block';
         insideText.innerText = error.toString();
     }
-
 }
+const inputs = document.querySelector('.elementor-row input');
+const labels = document.querySelectorAll('.elementor-row label');
+// inputs.addEventListener("focus",()=>{
+    labels.forEach((label) => {
+        console.log(label.innerText.split(''));
+        label.innerHTML = label.innerText
+        .split('')
+        .map((letter,idx) => `<span style="transition: ${idx*50}ms;">${letter}</span>`)
+        .join('')
+    });
+// })
+// inputs.addEventListener("focusout",()=>{
+//     labels.forEach(label => {
+//         label.innerHTML = `FullName`
+//     });
+// })
+const labelElement = document.querySelectorAll('.elementor-row span');
+inputs.addEventListener("focus",()=>{
+    labelElement.forEach((e)=>{
+        e.classList.toggle('movewhenclick');
+    })
+})
+inputs.addEventListener("focusout",()=>{
+    labelElement.forEach((e)=>{
+        e.classList.toggle('movewhenclick');
+    })
+})
