@@ -9,9 +9,11 @@ let student = [];
 let student_ = [];
 let reg = /\d/;
 regCheckWhiteSpace = /^\s/;
+regCheckNumber = /^[a-zA-Z]+$/;
 function myFunc() {
-    if (nameValue.value && ageValue.value && ageValue.value > 0 && ageValue.value<=150 && !reg.test(nameValue.value) && !regCheckWhiteSpace.test(nameValue.value)) {
-        
+    if (nameValue.value && ageValue.value && ageValue.value > 0 && ageValue.value<=150 && !reg.test(nameValue.value) && !regCheckWhiteSpace.test(nameValue.value) && !regCheckNumber.test(ageValue.value)) {
+        student.push(nameValue.value,ageValue.value);
+        table.innerHTML+='<li class="textInList">' + nameValue.value + '     ' + ageValue.value + '</li>' + '<br>';
     }
     else {
         modal.style.display = 'block';
