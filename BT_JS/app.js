@@ -22,11 +22,11 @@ var display8 = document.querySelector('.display8');
 var input8 = document.querySelector('.input8');
 var btn9 = document.querySelector('.btn9');
 var display9 = document.querySelector('.display9');
-var input9= document.querySelector('.input9');
+var input9 = document.querySelector('.input9');
 var btn10 = document.querySelector('.btn10');
 var display10 = document.querySelector('.display10');
-var input10_1= document.querySelector('.input10-1');
-var input10_2= document.querySelector('.input10-2');
+var input10_1 = document.querySelector('.input10-1');
+var input10_2 = document.querySelector('.input10-2');
 
 // console.log(btn3,display3,input3);
 regCheckIfNumberInString = /\d/;
@@ -38,18 +38,18 @@ function dateTime() {
     console.log(today.getDate() + '/' + today.getMonth() + '/' + today.getFullYear());
     display1.innerHTML = today.toString();
 }
-btn1.addEventListener('click',dateTime);
+btn1.addEventListener('click', dateTime);
 
 //2
 function displayDateAndTime() {
     today = new Date();
     dd = today.getDate();
-    mm = today.getMonth()+1;
+    mm = today.getMonth() + 1;
     yyyy = today.getFullYear();
     console.log(mm + '-' + dd + '-' + yyyy, mm + '/' + dd + '/' + yyyy, dd + '-' + mm + '-' + yyyy, mm + '/' + dd + '/' + yyyy);
-    display2.innerHTML = `<li> ${mm + '-' + dd + '-' + yyyy} </li> <br> `+ `<li> ${mm + '/' + dd + '/' + yyyy} </li> <br> `+`<li> ${dd + '-' + mm + '-' + yyyy} </li> <br> `+`<li> ${mm + '/' + dd + '/' + yyyy} </li> <br> `
+    display2.innerHTML = `<li> ${mm + '-' + dd + '-' + yyyy} </li> <br> ` + `<li> ${mm + '/' + dd + '/' + yyyy} </li> <br> ` + `<li> ${dd + '-' + mm + '-' + yyyy} </li> <br> ` + `<li> ${mm + '/' + dd + '/' + yyyy} </li> <br> `
 }
-btn2.addEventListener('click',displayDateAndTime);
+btn2.addEventListener('click', displayDateAndTime);
 //3
 function checkIncreaseSegment(text) {
     temp = text.toString().split('');
@@ -60,9 +60,10 @@ function checkIncreaseSegment(text) {
     }
     return false;
 }
-btn3.addEventListener('click',()=>{
+btn3.addEventListener('click', () => {
+    display3.innerHTML = "";
     text = input3.value
-    if (text)display3.innerHTML = checkIncreaseSegment(text);
+    if (text && !regCheckIfAnythingNotNumberInString.test(text) && !regCheckWhiteSpace.test(text)) display3.innerHTML = checkIncreaseSegment(text);
 });
 //4
 function mapToNextChar(s) {
@@ -74,18 +75,20 @@ function mapToNextChar(s) {
         .join('');
     return s;
 }
-btn4.addEventListener('click',()=>{
+btn4.addEventListener('click', () => {
+    display4.innerHTML = "";
     text = input4.value
-    if (text)display4.innerHTML = mapToNextChar(text);
+    if (text && regCheckIfNumberInString.test(text) && regCheckWhiteSpace.test(text)) display4.innerHTML = mapToNextChar(text);
 });
 //5
-function makeString(s){
-    if (s.length >= 3 && s.length%2==1){
-        return s.slice(s.length/2-1,s.length/2+2);
+function makeString(s) {
+    if (s.length >= 3 && s.length % 2 == 1) {
+        return s.slice(s.length / 2 - 1, s.length / 2 + 2);
     }
     else return 'Invalid Input';
 }
-btn5.addEventListener('click',()=>{
+btn5.addEventListener('click', () => {
+    display5.innerHTML = "";
     text = input5.value
     if (text) display5.innerHTML = makeString(text);
 });
@@ -98,14 +101,15 @@ function checkFrequency(s) {
 
     arr.forEach(e => {
         fre[e]++;
-        if (fre[e]>cntAns){
-            cntAns=fre[e];
+        if (fre[e] > cntAns) {
+            cntAns = fre[e];
             ans = e;
         }
     });
     return ans;
 }
-btn6.addEventListener('click',()=>{
+btn6.addEventListener('click', () => {
+    display6.innerHTML = "";
     text = input6.value
     if (text) display6.innerHTML = checkFrequency(text);
 });
@@ -113,7 +117,8 @@ btn6.addEventListener('click',()=>{
 function checkIfContainAnString(s) {
     return s.toLowerCase().includes('java');
 }
-btn7.addEventListener('click',()=>{
+btn7.addEventListener('click', () => {
+    display7.innerHTML = "";
     text = input7.value
     if (text) display7.innerHTML = checkIfContainAnString(text);
 });
@@ -124,11 +129,12 @@ function checkMonth(n) {
     ];
 
     const d = new Date();
-    return nameOfMonths[n-1];
+    return nameOfMonths[n - 1];
 }
-btn8.addEventListener('click',()=>{
+btn8.addEventListener('click', () => {
+    display8.innerHTML = "";
     text = Number(input8.value)
-    if (text) display8.innerHTML = checkMonth(text);
+    if (text <= 12 && text >= 1) display8.innerHTML = checkMonth(text);
 });
 //9
 function findLongestWord(s) {
@@ -139,15 +145,16 @@ function findLongestWord(s) {
     });
     return ans;
 }
-btn9.addEventListener('click',()=>{
+btn9.addEventListener('click', () => {
+    display9.innerHTML = "";
     text = input9.value;
     if (text) display9.innerHTML = findLongestWord(text);
 });
 //10
 function displayPrimeNumer(l, r) {
     let isPrime = new Array(r - l + 1).fill(true);
-    isPrime[0]=false;
-    isPrime[1]=false;
+    isPrime[0] = false;
+    // isPrime[1] = false;
     for (let i = 2; i * i < r; i++) {
         for (let j = Math.max(i * i, (l + i - 1) / i * i); j <= r; j += i) {
             isPrime[j - l] = false;
@@ -160,8 +167,9 @@ function displayPrimeNumer(l, r) {
     }
     return ans;
 }
-btn10.addEventListener('click',()=>{
-    start = input10_1.value;
-    end = input10_2.value;
-    if (start && end) display10.innerHTML = displayPrimeNumer(start,end).toString();
+btn10.addEventListener('click', () => {
+    display10.innerHTML = "";
+    start = Number(input10_1.value);
+    end = Number(input10_2.value);
+    if (start && end) display10.innerHTML = displayPrimeNumer(start, end);
 });
