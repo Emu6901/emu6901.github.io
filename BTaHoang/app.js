@@ -168,8 +168,8 @@ function getDOM() {
             }
             listSV.forEach(e => {
                 createElementInTable(e);
-                getDOM();
             })
+            getDOM();
         })
     })
     saveButtons.forEach((element) => {
@@ -355,7 +355,7 @@ window.onload = function () {
             console.log(sv1);
             listSV.push(sv1);
             createElementInTable(sv1);
-            getDOM();
         }
+        getDOM();
     }
 }
