@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 2</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg">
+      <form class="form" action="#" id="signup">
+        <h4 style="color: blueviolet">Quản lý sinh viên</h4>
+        <hr />
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            placeholder="your name"
+            class="form-control"
+            name="name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="class">Class</label>
+          <select
+            name="class"
+            class="form-control"
+            aria-label="Default select example"
+          >
+            <option selected></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="age">Ages</label>
+          <input
+            type="number"
+            placeholder="Age"
+            class="form-control"
+            name="age"
+          />
+          <small>Age should be 18-25.</small>
+        </div>
+        <div class="form-group" id="image">
+          <label for="img">Input image</label>
+          <input
+            type="file"
+            name="image"
+            class="form-control"
+            accept=".jpeg, .png"
+          />
+        </div>
+        <button type="submit" class="btn btn-info">Sign up!!</button>
+      </form>
+      <div class="table-wrap">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Age</th>
+              <th scope="col">Class</th>
+              <th scope="col">Image</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
